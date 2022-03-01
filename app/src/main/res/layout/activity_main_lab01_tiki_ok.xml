@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <ImageView
         android:id="@+id/imageView13"
@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         android:text="Cung cấp bởi Tiki Trading"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -82,10 +82,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         android:text="141.800 đ"
         android:textColor="#EE0D0D"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView13"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
@@ -96,21 +96,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         android:text="141.000 đ"
         app:layout_constraintStart_toEndOf="@+id/imageView13"
         app:layout_constraintTop_toBottomOf="@+id/textView40" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:drawableLeft="@drawable/ic_plus_tiki_ok"
-        app:backgroundTint="#B6AFAF"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
     <TextView
         android:id="@+id/textView42"
@@ -120,38 +109,25 @@
         android:layout_marginLeft="8dp"
         android:text="1"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/button10"
-        app:layout_constraintStart_toEndOf="@+id/button10"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:drawableLeft="@drawable/ic_minus_tiki_ok"
-        app:backgroundTint="#B6AFAF"
-        app:layout_constraintBottom_toBottomOf="@+id/button10"
-        app:layout_constraintStart_toEndOf="@+id/textView42"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
 
     <TextView
         android:id="@+id/textView43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="Mua sau"
         android:textColor="#6C91F3"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button11"
-        app:layout_constraintTop_toTopOf="@+id/button11" />
+        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
 
     <TextView
         android:id="@+id/textView44"
@@ -175,39 +151,23 @@
         android:layout_marginLeft="16dp"
         android:text="Xem tại đây"
         android:textColor="#6C91F3"
-        android:textStyle="bold"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView44"
         app:layout_constraintTop_toTopOf="@+id/textView44" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Mã giảm giá"
-        android:textColor="@color/black"
-        android:drawableLeft="@drawable/yellow_block"
-        app:backgroundTint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/textView45"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView44" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="Áp dụng"
-        app:backgroundTint="#6C91F3"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/button12"
+        app:backgroundTint="#6C91F3"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button12"
-        app:layout_constraintTop_toTopOf="@+id/button12" />
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName" />
 
     <TextView
         android:id="@+id/textView46"
@@ -299,13 +259,48 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
         android:text="Tiến hành đặt hàng"
         android:textStyle="bold"
         app:backgroundTint="#EE0D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/textView41"
+        app:srcCompat="@drawable/btnminus" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView42"
+        app:layout_constraintStart_toEndOf="@+id/textView42"
+        app:layout_constraintTop_toTopOf="@+id/textView42"
+        app:srcCompat="@drawable/btnadd" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/txt_magiamgia_border"
+        android:drawableLeft="@drawable/yellow_block"
+        android:ems="10"
+        android:hint="Mã giảm giá"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView45"
+        app:layout_constraintStart_toStartOf="@+id/textView44"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
 </androidx.constraintlayout.widget.ConstraintLayout>
